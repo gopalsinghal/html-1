@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <style>
+        table {
+            border: green 2px solid;
+            border-collapse: collapse;
+        }
+        td {
+            border: lightskyblue 1px dotted;
+            padding: 5px;
+        }
+        thead{
+            font-weight: bold;
+            text-align: center;
+            border: darkgreen 2px solid;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!--Table Demo-->
+    <table>
+        <thead>
+        <tr>
+            <td>
+                Column1
+            </td>
+        <td>
+            column2
+        </td>
+            <td>
+                LastColumn
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="3">11</td>
+            <td>12</td>
+            <td>13</td>
+        </tr>
+        <tr>
+            <td>22</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>32</td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>41</td>
+            <td>42</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>51</td>
+            <td>52</td>
+            <td>53</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="3">This is the footer to display time</td>
+        </tr>
+        </tfoot>
+    </table>
+</div>
+
+</body>
+</html>

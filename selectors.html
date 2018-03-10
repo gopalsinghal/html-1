@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selectors</title>
+    <style>
+        /* Use this selector when you have to select all p elements inside a div regardless of their nesting level */
+        div p {
+            color: orange;
+        }
+        div > p {
+            color: red;
+        }
+        div ~ p {
+            color: green;
+        }
+        div + p {
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- HTML-->
+<section>
+<div>
+ <span>
+   <p> Inside span 1 </p>
+ </span>
+    <span>
+   <p> Inside span 2 </p>
+ </span>
+    <span>
+   <p> Inside span 3 </p>
+ </span>
+    <p> Inside div and outside span </p>
+</div>
+<p> Outside div and Immediately after </p>
+<p> Outside div and Not Immediately after</p>
+<span>
+  <p> Nested inside span</p>
+ </span>
+<p> Not an immediate sibling </p>
+</section>
+<p>Its not even a sibling</p>
+</body>
+</html>

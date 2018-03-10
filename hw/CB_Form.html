@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CB Form</title>
+    <style>
+        * {
+            font-family: Calibri;
+            background-color: lightyellow;
+        }
+        .submit {
+            margin-top: 30px;
+        }
+        .submit input {
+            margin-top: 30px;
+
+        }
+        label{
+            font-weight: bold ;
+        }
+        td{
+          padding: 8px;
+        }
+        h2{
+            color: grey;
+            text-decoration: underline;
+        }
+        .mandatory {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2>Coding Blocks Registration Form</h2>
+</div>
+<form method="post" action="#" >
+    <table>
+
+    <tr>
+    <td><label for="name">Full Name: <span class="mandatory">*</span> </label></td>
+    <td><input type="text" id="name" name="name" placeholder="Enter Full Name" required></td>
+    </tr>
+        <tr>
+    <td><label for="email">Email Address: <span class="mandatory">*</span> </label></td>
+    <td><input type="email" name="email" id="email" placeholder="Enter Email Address" required></td>
+        </tr><tr>
+
+    <td><label for="password">Password: <span class="mandatory">*</span></label></td>
+    <td><input type="password" name="password" id="password" placeholder="Enter Password" required></td>
+    </tr><tr>
+    <td><label for="contact">Contact Number: <span class="mandatory">*</span></label></td>
+    <td><input type="tel" name="contact" id="contact" placeholder="Enter Mobile Number" required></td>
+    </tr><tr>
+        <td><label for="dob">Date of Birth: </label></td>
+    <td><input type="date" name="dob" id="dob" placeholder="Date of Birth"></td>
+    </tr><tr>
+    <td><label for="color">Favourite Color: </label></td>
+    <td><input type="color" name="color" id="color" placeholder="Select Favourite Color"></td>
+    </tr><tr>
+    <td><label for="url">Your Website: </label></td>
+    <td><input type="url" name="url" id="url" placeholder="Enter Website URL"></td>
+    </tr><tr>
+    <td><label for="gender">Gender: <span class="mandatory">*</span></label></td>
+    <td><input type="radio" name="gender" id="gender" value="male" required> Male
+    <input type="radio" name="gender" value="female" required> Female</td>
+    </tr><tr>
+        <td>
+    <label for="course">Course Interested In: <span class="mandatory">*</span></label></td>
+        <td>
+    <div><input type="checkbox" id="course" name="launchpad" value="true"> LaunchPad (Foundation C++)</div>
+    <div><input type="checkbox" id="elixir" name="elixir" value="true"> Elixir (Web Dev with Node.JS)</div>
+    <div><input type="checkbox" id="pandora" name="pandora" value="true"> Pandora (Android Mobile Dev)</div>
+    <div><input type="checkbox" id="ml" name="ml" value="true"> Machine Learning</div></td>
+</tr><tr>
+        <td>
+    <label for="resume">Upload Resume: </label></td>
+        <td>
+    <input type="file" id="resume" name="resume" accept="application/pdf"></td>
+    </tr><tr>
+    <td><label for="pic">Upload Photo: <span class="mandatory">*</span></label></td>
+    <td><input type="file" id="pic" name="pic" accept="image/*" required></td>
+    </tr><tr class="submit">
+    <input type="hidden" name="ip" value="requested_ip">
+        <td>
+    <input type="reset" value="Reset Form" disabled></td>
+    <td><input type="submit" value="Submit Form"></td>
+    </tr>
+    </table>
+</form>
+</body>
+</html>
